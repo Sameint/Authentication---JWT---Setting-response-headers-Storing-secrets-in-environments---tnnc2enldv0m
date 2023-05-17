@@ -12,7 +12,6 @@ function verifyAuthToken (req, res, next) {
         res.status(400).json({message: err.message});
     }
 }   
-
 function verifyRefreshToken (req, res, next) {
     const token = req.header('refresh-token');
     if(!token) return res.status(401).json({message: 'Access denied'});
