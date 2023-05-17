@@ -1,12 +1,12 @@
 const mongooose = require('mongoose');
 
 const tokenSchema = new mongooose.Schema({
-token:{
-    type:String,
-    require:true
-}
-  
-})
+    // Your code goes here
+    token: {
+    type: String,
+    required: true,
+  },
+});
 
 const RefreshToken = mongooose.model('tokens', tokenSchema);
 
